@@ -27,7 +27,6 @@ RUN echo 'RPCMOUNTDOPTS="-p 32767"' >>  /etc/default/nfs-kernel-server
 RUN echo 'RPCRQUOTADOPTS="-p 32769"' >>  /etc/default/quota
 RUN mkdir -p /etc/modprobe.d/
 RUN echo 'options lockd nlm_udpport=32768 nlm_tcpport=32768' >> /etc/modprobe.d/local.conf
-RUN echo '' >>  /etc/default/
 
 VOLUME /exports
 
